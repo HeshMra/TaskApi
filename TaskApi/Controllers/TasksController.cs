@@ -8,26 +8,26 @@ namespace TaskApi.Controllers
     [ApiController]
     public class TasksController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet] //read
         public IActionResult Tasks()
         {
             var tasks= new string[] { "Task 1", "Task 2", "Task 3" };
             return Ok(tasks);
         }
 
-        [HttpPost]
+        [HttpPost] //create
         public IActionResult NewTask()
         {
             return Ok();
         }
 
-        [HttpPut]
+        [HttpPut] //update
         public IActionResult UpdateTask()
         {
             return Ok();
         }
 
-        [HttpDelete]
+        [HttpDelete] //delete
         public IActionResult DeleteTask() 
 
         {
